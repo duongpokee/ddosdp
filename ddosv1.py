@@ -186,6 +186,9 @@ def logo():
 88    .8P 88    .8P Y8.   .8P d8'   .8P          d8'   .8P 88  .d8P  88  88        
 8888888P  8888888P   `8888P'   Y88888P            Y88888P  888888'   dP  dP        
 ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo ''')
+print(colored("KHÔNG ĐƯỢC SỬ DỤNG CHO CÁC HOẠT DỘNG BẤT HỢP PHÁP!", 'red'))
+print(colored("MỌI HÀNH ĐỘNG SAI TRÁI SẼ DẪN ĐẾN HẬU QUẢ KHÓ LƯỜNG!", 'red'))
+
     try:
         print("\n[*] Target : " +str(url_main)+ ":" +str(port))
     except:
