@@ -188,7 +188,6 @@ def logo():
 ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo ''')
 print(colored("KHÔNG ĐƯỢC SỬ DỤNG CHO CÁC HOẠT DỘNG BẤT HỢP PHÁP!", 'red'))
 print(colored("MỌI HÀNH ĐỘNG SAI TRÁI SẼ DẪN ĐẾN HẬU QUẢ KHÓ LƯỜNG!", 'red'))
-                                                                        ''')
 
     try:
         print("\n[*] Target : " +str(url_main)+ ":" +str(port))
