@@ -1,4 +1,12 @@
 
+#[+]==============[ Contact ]===========[+]#
+# # Discord: PassDDoS#6595               # #
+# # ICQ    : @passddos                   # #
+# # Tele   : https://t.me/PassDDoS       # #
+# # Email  : passddos@gmail.com          # #
+# # Github : https://github.com/PassDDoS # #
+#[+]====================================[+]#
+
 import os, sys
 
 try:
@@ -176,8 +184,9 @@ def logo():
     elif sys.platform.startswith("freebsd"):
         os.system('clear')
     else:
-        os.system('color ' +random.choice(['a', 'b', 'c', 'd'])+ " & cls & title Download: Tool DDOSER")
+        os.system('color ' +random.choice(['a', 'b', 'c', 'd'])+ " & cls & title Download: bit.ly/AnonyV28 ~ Anonymous DDoSer v2.8")
     print('''
+             - PassDDoS#6595 Selling Bypass JS/UAM/Captcha/etc -
 
 888888ba  888888ba   .88888.  .d88888b           .d88888b  dP     dP dP  888888ba  
 88    `8b 88    `8b d8'   `8b 88.    "'          88.    "' 88     88 88  88    `8b 
@@ -186,9 +195,6 @@ def logo():
 88    .8P 88    .8P Y8.   .8P d8'   .8P          d8'   .8P 88  .d8P  88  88        
 8888888P  8888888P   `8888P'   Y88888P            Y88888P  888888'   dP  dP        
 ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo ''')
-print(colored("KHÔNG ĐƯỢC SỬ DỤNG CHO CÁC HOẠT DỘNG BẤT HỢP PHÁP!", 'red'))
-print(colored("MỌI HÀNH ĐỘNG SAI TRÁI SẼ DẪN ĐẾN HẬU QUẢ KHÓ LƯỜNG!", 'red'))
-
     try:
         print("\n[*] Target : " +str(url_main)+ ":" +str(port))
     except:
