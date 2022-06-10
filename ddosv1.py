@@ -1,4 +1,3 @@
-import os, sys
 
 #[+]==============[ Contact ]===========[+]#
 # # Discord: PassDDoS#6595               # #
