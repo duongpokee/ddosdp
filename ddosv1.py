@@ -412,7 +412,7 @@ def choice_method_attack():
 
 def choice_down_proxies():
     global urlproxy, urlproxy, sel_pr
-    choice4 = input("[?] Nhận Một Danh Sách Mới " +str(filenam2)+ " [Y/N]: ")
+    choice4 = input("[?] Nhận Một Danh Sách " +str(filenam2)+ " [Y/N]: ")
     if (choice4 == "y") or (choice4 == "Y"):
         print("-----------------------------")
         print("|_--> 1: Server X")
