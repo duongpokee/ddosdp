@@ -420,14 +420,14 @@ def choice_down_proxies():
         sel_pr = input("[?] Server Get [1/2]: ")
         if choice_mode == "proxy":
             if sel_pr == "1":
-                urlproxy = "https://www.proxy-list.download/api/v1/get?type=http"
+                urlproxy = "https://api.proxyscrape.com/?request=displayproxies&proxytype=http&timeout=10000&country=all&ssl=yes&anonymity=all"
             else:
-                urlproxy = "https://api.proxyscrape.com/?request=displayproxies&proxytype=http&timeout=5000&country=all&ssl=yes&anonymity=all"
+                urlproxy = "https://api.proxyscrape.com/v2/?request=displayproxies&protocol=http&timeout=10000&country=all&ssl=all&anonymity=all"
         else:
             if sel_pr == "1":
-                urlproxy = "https://www.proxy-list.download/api/v1/get?type=socks5"
+                urlproxy = "https://api.proxyscrape.com/?request=displayproxies&proxytype=socks5&timeout=10000&country=all&ssl=yes&anonymity=all"
             else:
-                urlproxy = "https://api.proxyscrape.com/?request=displayproxies&proxytype=socks5&timeout=5000&country=all&ssl=yes&anonymity=all"
+                urlproxy = "https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks5&timeout=10000&country=all&ssl=all&anonymity=all"
         proxyget()
     else:
         print("[!] Đã Chọn Không Nhận Danh Sách " +str(filenam2)+ " [!]")
